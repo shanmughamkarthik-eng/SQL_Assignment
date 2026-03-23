@@ -879,6 +879,241 @@ cells:
 
       \r\n"
     languageId: markdown
+  - kind: 2
+    value: "-- 3. Write a SELECT that returns each employee’s `employee_id` and a
+      literal value `'HR'` in a column named `department`.\r
+
+      SELECT employee_id, 'HR' AS department\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "EMPLOYEE_ID DEPARTMENT \r
+
+      ----------- ---------- \r
+
+      100         HR         \r
+
+      101         HR         \r
+
+      102         HR         \r
+
+      103         HR         \r
+
+      104         HR         \r
+
+      105         HR         \r
+
+      106         HR         \r
+
+      107         HR         \r
+
+      108         HR         \r
+
+      109         HR         \r
+
+      110         HR         \r
+
+      111         HR         \r
+
+      112         HR         \r
+
+      113         HR         \r
+
+      114         HR         \r
+
+      115         HR         \r
+
+      116         HR         \r
+
+      117         HR         \r
+
+      118         HR         \r
+
+      119         HR         \r
+
+      120         HR         \r
+
+      121         HR         \r
+
+      122         HR         \r
+
+      123         HR         \r
+
+      124         HR         \r
+
+      125         HR         \r
+
+      126         HR         \r
+
+      127         HR         \r
+
+      128         HR         \r
+
+      129         HR         \r
+
+      130         HR         \r
+
+      131         HR         \r
+
+      132         HR         \r
+
+      133         HR         \r
+
+      134         HR         \r
+
+      135         HR         \r
+
+      136         HR         \r
+
+      137         HR         \r
+
+      138         HR         \r
+
+      139         HR         \r
+
+      140         HR         \r
+
+      141         HR         \r
+
+      142         HR         \r
+
+      143         HR         \r
+
+      144         HR         \r
+
+      145         HR         \r
+
+      146         HR         \r
+
+      147         HR         \r
+
+      148         HR         \r
+
+      149         HR         \r
+
+      150         HR         \r
+
+      151         HR         \r
+
+      152         HR         \r
+
+      153         HR         \r
+
+      154         HR         \r
+
+      155         HR         \r
+
+      156         HR         \r
+
+      157         HR         \r
+
+      158         HR         \r
+
+      159         HR         \r
+
+      160         HR         \r
+
+      161         HR         \r
+
+      162         HR         \r
+
+      163         HR         \r
+
+      164         HR         \r
+
+      165         HR         \r
+
+      166         HR         \r
+
+      167         HR         \r
+
+      168         HR         \r
+
+      169         HR         \r
+
+      170         HR         \r
+
+      171         HR         \r
+
+      172         HR         \r
+
+      173         HR         \r
+
+      174         HR         \r
+
+      175         HR         \r
+
+      176         HR         \r
+
+      177         HR         \r
+
+      178         HR         \r
+
+      179         HR         \r
+
+      180         HR         \r
+
+      181         HR         \r
+
+      182         HR         \r
+
+      183         HR         \r
+
+      184         HR         \r
+
+      185         HR         \r
+
+      186         HR         \r
+
+      187         HR         \r
+
+      188         HR         \r
+
+      189         HR         \r
+
+      190         HR         \r
+
+      191         HR         \r
+
+      192         HR         \r
+
+      193         HR         \r
+
+      194         HR         \r
+
+      195         HR         \r
+
+      196         HR         \r
+
+      197         HR         \r
+
+      198         HR         \r
+
+      199         HR         \r
+
+      200         HR         \r
+
+      201         HR         \r
+
+      202         HR         \r
+
+      203         HR         \r
+
+      204         HR         \r
+
+      205         HR         \r
+
+      206         HR         \r
+
+      \r
+
+      Elapsed: 00:00:00.010\r
+
+      107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
   - kind: 1
     value: "## Part 3: Additional Practice — 20 Medium + 20 Hard Questions (With
       Hints)\r
