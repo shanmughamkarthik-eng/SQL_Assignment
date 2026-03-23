@@ -1124,25 +1124,489 @@ cells:
 
       \r
 
-      ### 20 Medium Questions\r
-
-      \r
-
-      1. **M1.** Display `employee_id`, `first_name`, `last_name`, and a new
+      ### 20 Medium Questions"
+    languageId: markdown
+  - kind: 1
+    value: "1. **M1.** Display `employee_id`, `first_name`, `last_name`, and a new
       column `full_name` that is first_name and last_name concatenated with a
       comma between them (e.g., \"John, Doe\").  \r
 
       \   **Hint:** Use `first_name || ', ' || last_name` and alias it as
-      `full_name`.\r
+      `full_name`."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT employee_id, first_name, last_name, first_name || ', ' ||
+      last_name AS full_name\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "EMPLOYEE_ID FIRST_NAME    LAST_NAME     FULL_NAME            \r
+
+      ----------- ------------- ------------- -------------------- \r
+
+      100         Steven        King          Steven, King         \r
+
+      101         Neena         Yang          Neena, Yang          \r
+
+      102         Lex           Garcia        Lex, Garcia          \r
+
+      103         Alexander     James         Alexander, James     \r
+
+      104         Bruce         Miller        Bruce, Miller        \r
+
+      105         David         Williams      David, Williams      \r
+
+      106         Valli         Jackson       Valli, Jackson       \r
+
+      107         Diana         Nguyen        Diana, Nguyen        \r
+
+      108         Nancy         Gruenberg     Nancy, Gruenberg     \r
+
+      109         Daniel        Faviet        Daniel, Faviet       \r
+
+      110         John          Chen          John, Chen           \r
+
+      111         Ismael        Sciarra       Ismael, Sciarra      \r
+
+      112         Jose Manuel   Urman         Jose Manuel, Urman   \r
+
+      113         Luis          Popp          Luis, Popp           \r
+
+      114         Den           Li            Den, Li              \r
+
+      115         Alexander     Khoo          Alexander, Khoo      \r
+
+      116         Shelli        Baida         Shelli, Baida        \r
+
+      117         Sigal         Tobias        Sigal, Tobias        \r
+
+      118         Guy           Himuro        Guy, Himuro          \r
+
+      119         Karen         Colmenares    Karen, Colmenares    \r
+
+      120         Matthew       Weiss         Matthew, Weiss       \r
+
+      121         Adam          Fripp         Adam, Fripp          \r
+
+      122         Payam         Kaufling      Payam, Kaufling      \r
+
+      123         Shanta        Vollman       Shanta, Vollman      \r
+
+      124         Kevin         Mourgos       Kevin, Mourgos       \r
+
+      125         Julia         Nayer         Julia, Nayer         \r
+
+      126         Irene         Mikkilineni   Irene, Mikkilineni   \r
+
+      127         James         Landry        James, Landry        \r
+
+      128         Steven        Markle        Steven, Markle       \r
+
+      129         Laura         Bissot        Laura, Bissot        \r
+
+      130         Mozhe         Atkinson      Mozhe, Atkinson      \r
+
+      131         James         Marlow        James, Marlow        \r
+
+      132         TJ            Olson         TJ, Olson            \r
+
+      133         Jason         Mallin        Jason, Mallin        \r
+
+      134         Michael       Rogers        Michael, Rogers      \r
+
+      135         Ki            Gee           Ki, Gee              \r
+
+      136         Hazel         Philtanker    Hazel, Philtanker    \r
+
+      137         Renske        Ladwig        Renske, Ladwig       \r
+
+      138         Stephen       Stiles        Stephen, Stiles      \r
+
+      139         John          Seo           John, Seo            \r
+
+      140         Joshua        Patel         Joshua, Patel        \r
+
+      141         Trenna        Rajs          Trenna, Rajs         \r
+
+      142         Curtis        Davies        Curtis, Davies       \r
+
+      143         Randall       Matos         Randall, Matos       \r
+
+      144         Peter         Vargas        Peter, Vargas        \r
+
+      145         John          Singh         John, Singh          \r
+
+      146         Karen         Partners      Karen, Partners      \r
+
+      147         Alberto       Errazuriz     Alberto, Errazuriz   \r
+
+      148         Gerald        Cambrault     Gerald, Cambrault    \r
+
+      149         Eleni         Zlotkey       Eleni, Zlotkey       \r
+
+      150         Sean          Tucker        Sean, Tucker         \r
+
+      151         David         Bernstein     David, Bernstein     \r
+
+      152         Peter         Hall          Peter, Hall          \r
+
+      153         Christopher   Olsen         Christopher, Olsen   \r
+
+      154         Nanette       Cambrault     Nanette, Cambrault   \r
+
+      155         Oliver        Tuvault       Oliver, Tuvault      \r
+
+      156         Janette       King          Janette, King        \r
+
+      157         Patrick       Sully         Patrick, Sully       \r
+
+      158         Allan         McEwen        Allan, McEwen        \r
+
+      159         Lindsey       Smith         Lindsey, Smith       \r
+
+      160         Louise        Doran         Louise, Doran        \r
+
+      161         Sarath        Sewall        Sarath, Sewall       \r
+
+      162         Clara         Vishney       Clara, Vishney       \r
+
+      163         Danielle      Greene        Danielle, Greene     \r
+
+      164         Mattea        Marvins       Mattea, Marvins      \r
+
+      165         David         Lee           David, Lee           \r
+
+      166         Sundar        Ande          Sundar, Ande         \r
+
+      167         Amit          Banda         Amit, Banda          \r
+
+      168         Lisa          Ozer          Lisa, Ozer           \r
+
+      169         Harrison      Bloom         Harrison, Bloom      \r
+
+      170         Tayler        Fox           Tayler, Fox          \r
+
+      171         William       Smith         William, Smith       \r
+
+      172         Elizabeth     Bates         Elizabeth, Bates     \r
+
+      173         Sundita       Kumar         Sundita, Kumar       \r
+
+      174         Ellen         Abel          Ellen, Abel          \r
+
+      175         Alyssa        Hutton        Alyssa, Hutton       \r
+
+      176         Jonathon      Taylor        Jonathon, Taylor     \r
+
+      177         Jack          Livingston    Jack, Livingston     \r
+
+      178         Kimberely     Grant         Kimberely, Grant     \r
+
+      179         Charles       Johnson       Charles, Johnson     \r
+
+      180         Winston       Taylor        Winston, Taylor      \r
+
+      181         Jean          Fleaur        Jean, Fleaur         \r
+
+      182         Martha        Sullivan      Martha, Sullivan     \r
+
+      183         Girard        Geoni         Girard, Geoni        \r
+
+      184         Nandita       Sarchand      Nandita, Sarchand    \r
+
+      185         Alexis        Bull          Alexis, Bull         \r
+
+      186         Julia         Dellinger     Julia, Dellinger     \r
+
+      187         Anthony       Cabrio        Anthony, Cabrio      \r
+
+      188         Kelly         Chung         Kelly, Chung         \r
+
+      189         Jennifer      Dilly         Jennifer, Dilly      \r
+
+      190         Timothy       Venzl         Timothy, Venzl       \r
+
+      191         Randall       Perkins       Randall, Perkins     \r
+
+      192         Sarah         Bell          Sarah, Bell          \r
+
+      193         Britney       Everett       Britney, Everett     \r
+
+      194         Samuel        McLeod        Samuel, McLeod       \r
+
+      195         Vance         Jones         Vance, Jones         \r
+
+      196         Alana         Walsh         Alana, Walsh         \r
+
+      197         Kevin         Feeney        Kevin, Feeney        \r
+
+      198         Donald        OConnell      Donald, OConnell     \r
+
+      199         Douglas       Grant         Douglas, Grant       \r
+
+      200         Jennifer      Whalen        Jennifer, Whalen     \r
+
+      201         Michael       Martinez      Michael, Martinez    \r
+
+      202         Pat           Davis         Pat, Davis           \r
+
+      203         Susan         Jacobs        Susan, Jacobs        \r
+
+      204         Hermann       Brown         Hermann, Brown       \r
+
+      205         Shelley       Higgins       Shelley, Higgins     \r
+
+      206         William       Gietz         William, Gietz       \r
 
       \r
 
-      2. **M2.** List `employee_id`, `salary`, and a column `bonus_10_pct`
+      Elapsed: 00:00:00.008\r
+
+      107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "2. **M2.** List `employee_id`, `salary`, and a column `bonus_10_pct`
       showing 10% of salary (salary * 0.10).  \r
 
-      \   **Hint:** Use an arithmetic expression and alias.\r
+      \   **Hint:** Use an arithmetic expression and alias."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT employee_id, salary, salary * 0.10 AS bonus_10_pct\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "EMPLOYEE_ID SALARY BONUS_10_PCT \r
+
+      ----------- ------ ------------ \r
+
+      100         24000  2400         \r
+
+      101         17000  1700         \r
+
+      102         17000  1700         \r
+
+      103         9000   900          \r
+
+      104         6000   600          \r
+
+      105         4800   480          \r
+
+      106         4800   480          \r
+
+      107         4200   420          \r
+
+      108         12008  1200.8       \r
+
+      109         9000   900          \r
+
+      110         8200   820          \r
+
+      111         7700   770          \r
+
+      112         7800   780          \r
+
+      113         6900   690          \r
+
+      114         11000  1100         \r
+
+      115         3100   310          \r
+
+      116         2900   290          \r
+
+      117         2800   280          \r
+
+      118         2600   260          \r
+
+      119         2500   250          \r
+
+      120         8000   800          \r
+
+      121         8200   820          \r
+
+      122         7900   790          \r
+
+      123         6500   650          \r
+
+      124         5800   580          \r
+
+      125         3200   320          \r
+
+      126         2700   270          \r
+
+      127         2400   240          \r
+
+      128         2200   220          \r
+
+      129         3300   330          \r
+
+      130         2800   280          \r
+
+      131         2500   250          \r
+
+      132         2100   210          \r
+
+      133         3300   330          \r
+
+      134         2900   290          \r
+
+      135         2400   240          \r
+
+      136         2200   220          \r
+
+      137         3600   360          \r
+
+      138         3200   320          \r
+
+      139         2700   270          \r
+
+      140         2500   250          \r
+
+      141         3500   350          \r
+
+      142         3100   310          \r
+
+      143         2600   260          \r
+
+      144         2500   250          \r
+
+      145         14000  1400         \r
+
+      146         13500  1350         \r
+
+      147         12000  1200         \r
+
+      148         11000  1100         \r
+
+      149         10500  1050         \r
+
+      150         10000  1000         \r
+
+      151         9500   950          \r
+
+      152         9000   900          \r
+
+      153         8000   800          \r
+
+      154         7500   750          \r
+
+      155         7000   700          \r
+
+      156         10000  1000         \r
+
+      157         9500   950          \r
+
+      158         9000   900          \r
+
+      159         8000   800          \r
+
+      160         7500   750          \r
+
+      161         7000   700          \r
+
+      162         10500  1050         \r
+
+      163         9500   950          \r
+
+      164         7200   720          \r
+
+      165         6800   680          \r
+
+      166         6400   640          \r
+
+      167         6200   620          \r
+
+      168         11500  1150         \r
+
+      169         10000  1000         \r
+
+      170         9600   960          \r
+
+      171         7400   740          \r
+
+      172         7300   730          \r
+
+      173         6100   610          \r
+
+      174         11000  1100         \r
+
+      175         8800   880          \r
+
+      176         8600   860          \r
+
+      177         8400   840          \r
+
+      178         7000   700          \r
+
+      179         6200   620          \r
+
+      180         3200   320          \r
+
+      181         3100   310          \r
+
+      182         2500   250          \r
+
+      183         2800   280          \r
+
+      184         4200   420          \r
+
+      185         4100   410          \r
+
+      186         3400   340          \r
+
+      187         3000   300          \r
+
+      188         3800   380          \r
+
+      189         3600   360          \r
+
+      190         2900   290          \r
+
+      191         2500   250          \r
+
+      192         4000   400          \r
+
+      193         3900   390          \r
+
+      194         3200   320          \r
+
+      195         2800   280          \r
+
+      196         3100   310          \r
+
+      197         3000   300          \r
+
+      198         2600   260          \r
+
+      199         2600   260          \r
+
+      200         4400   440          \r
+
+      201         13000  1300         \r
+
+      202         6000   600          \r
+
+      203         6500   650          \r
+
+      204         10000  1000         \r
+
+      205         12008  1200.8       \r
+
+      206         8300   830          \r
 
       \r
+
+      Elapsed: 00:00:00.007\r
+
+      107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "\r
 
       3. **M3.** Show `employee_id`, `hire_date`, and a literal column
       `record_type` with value `'Employee'` for every row.  \r
