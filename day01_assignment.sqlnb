@@ -1606,44 +1606,308 @@ cells:
       \r\n"
     languageId: markdown
   - kind: 1
-    value: "\r
-
-      3. **M3.** Show `employee_id`, `hire_date`, and a literal column
+    value: "3. **M3.** Show `employee_id`, `hire_date`, and a literal column
       `record_type` with value `'Employee'` for every row.  \r
 
-      \   **Hint:** Add `'Employee' AS record_type` in the SELECT list.\r
+      \   **Hint:** Add `'Employee' AS record_type` in the SELECT list."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT employee_id, hire_date, 'Employee' AS record_type\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "        EMPLOYEE_ID HIRE_DATE                 RECORD_TYPE \r
+
+      \        ----------- ------------------------- ----------- \r
+
+      \        100         06/17/2013, 05:30:00 AM   Employee    \r
+
+      \        101         09/21/2015, 05:30:00 AM   Employee    \r
+
+      \        102         01/13/2011, 05:30:00 AM   Employee    \r
+
+      \        103         01/03/2016, 05:30:00 AM   Employee    \r
+
+      \        104         05/21/2017, 05:30:00 AM   Employee    \r
+
+      \        105         06/25/2015, 05:30:00 AM   Employee    \r
+
+      \        106         02/05/2016, 05:30:00 AM   Employee    \r
+
+      \        107         02/07/2017, 05:30:00 AM   Employee    \r
+
+      \        108         08/17/2012, 05:30:00 AM   Employee    \r
+
+      \        109         08/16/2012, 05:30:00 AM   Employee    \r
+
+      \        110         09/28/2015, 05:30:00 AM   Employee    \r
+
+      \        111         09/30/2015, 05:30:00 AM   Employee    \r
+
+      \        112         03/07/2016, 05:30:00 AM   Employee    \r
+
+      \        113         12/07/2017, 05:30:00 AM   Employee    \r
+
+      \        114         12/07/2012, 05:30:00 AM   Employee    \r
+
+      \        115         05/18/2013, 05:30:00 AM   Employee    \r
+
+      \        116         12/24/2015, 05:30:00 AM   Employee    \r
+
+      \        117         07/24/2015, 05:30:00 AM   Employee    \r
+
+      \        118         11/15/2016, 05:30:00 AM   Employee    \r
+
+      \        119         08/10/2017, 05:30:00 AM   Employee    \r
+
+      \        120         07/18/2014, 05:30:00 AM   Employee    \r
+
+      \        121         04/10/2015, 05:30:00 AM   Employee    \r
+
+      \        122         05/01/2013, 05:30:00 AM   Employee    \r
+
+      \        123         10/10/2015, 05:30:00 AM   Employee    \r
+
+      \        124         11/16/2017, 05:30:00 AM   Employee    \r
+
+      \        125         07/16/2015, 05:30:00 AM   Employee    \r
+
+      \        126         09/28/2016, 05:30:00 AM   Employee    \r
+
+      \        127         01/14/2017, 05:30:00 AM   Employee    \r
+
+      \        128         03/08/2018, 05:30:00 AM   Employee    \r
+
+      \        129         08/20/2015, 05:30:00 AM   Employee    \r
+
+      \        130         10/30/2015, 05:30:00 AM   Employee    \r
+
+      \        131         02/16/2015, 05:30:00 AM   Employee    \r
+
+      \        132         04/10/2017, 05:30:00 AM   Employee    \r
+
+      \        133         06/14/2014, 05:30:00 AM   Employee    \r
+
+      \        134         08/26/2016, 05:30:00 AM   Employee    \r
+
+      \        135         12/12/2017, 05:30:00 AM   Employee    \r
+
+      \        136         02/06/2018, 05:30:00 AM   Employee    \r
+
+      \        137         07/14/2013, 05:30:00 AM   Employee    \r
+
+      \        138         10/26/2015, 05:30:00 AM   Employee    \r
+
+      \        139         02/12/2016, 05:30:00 AM   Employee    \r
+
+      \        140         04/06/2016, 05:30:00 AM   Employee    \r
+
+      \        141         10/17/2013, 05:30:00 AM   Employee    \r
+
+      \        142         01/29/2015, 05:30:00 AM   Employee    \r
+
+      \        143         03/15/2016, 05:30:00 AM   Employee    \r
+
+      \        144         07/09/2016, 05:30:00 AM   Employee    \r
+
+      \        145         10/01/2014, 05:30:00 AM   Employee    \r
+
+      \        146         01/05/2015, 05:30:00 AM   Employee    \r
+
+      \        147         03/10/2015, 05:30:00 AM   Employee    \r
+
+      \        148         10/15/2017, 05:30:00 AM   Employee    \r
+
+      \        149         01/29/2018, 05:30:00 AM   Employee    \r
+
+      \        150         01/30/2015, 05:30:00 AM   Employee    \r
+
+      \        151         03/24/2015, 05:30:00 AM   Employee    \r
+
+      \        152         08/20/2015, 05:30:00 AM   Employee    \r
+
+      \        153         03/30/2016, 05:30:00 AM   Employee    \r
+
+      \        154         12/09/2016, 05:30:00 AM   Employee    \r
+
+      \        155         11/23/2017, 05:30:00 AM   Employee    \r
+
+      \        156         01/30/2014, 05:30:00 AM   Employee    \r
+
+      \        157         03/04/2014, 05:30:00 AM   Employee    \r
+
+      \        158         08/01/2014, 05:30:00 AM   Employee    \r
+
+      \        159         03/10/2015, 05:30:00 AM   Employee    \r
+
+      \        160         12/15/2015, 05:30:00 AM   Employee    \r
+
+      \        161         11/03/2016, 05:30:00 AM   Employee    \r
+
+      \        162         11/11/2015, 05:30:00 AM   Employee    \r
+
+      \        163         03/19/2017, 05:30:00 AM   Employee    \r
+
+      \        164         01/24/2018, 05:30:00 AM   Employee    \r
+
+      \        165         02/23/2018, 05:30:00 AM   Employee    \r
+
+      \        166         03/24/2018, 05:30:00 AM   Employee    \r
+
+      \        167         04/21/2018, 05:30:00 AM   Employee    \r
+
+      \        168         03/11/2015, 05:30:00 AM   Employee    \r
+
+      \        169         03/23/2016, 05:30:00 AM   Employee    \r
+
+      \        170         01/24/2016, 05:30:00 AM   Employee    \r
+
+      \        171         02/23/2017, 05:30:00 AM   Employee    \r
+
+      \        172         03/24/2017, 05:30:00 AM   Employee    \r
+
+      \        173         04/21/2018, 05:30:00 AM   Employee    \r
+
+      \        174         05/11/2014, 05:30:00 AM   Employee    \r
+
+      \        175         03/19/2015, 05:30:00 AM   Employee    \r
+
+      \        176         03/24/2016, 05:30:00 AM   Employee    \r
+
+      \        177         04/23/2016, 05:30:00 AM   Employee    \r
+
+      \        178         05/24/2017, 05:30:00 AM   Employee    \r
+
+      \        179         01/04/2018, 05:30:00 AM   Employee    \r
+
+      \        180         01/24/2016, 05:30:00 AM   Employee    \r
+
+      \        181         02/23/2016, 05:30:00 AM   Employee    \r
+
+      \        182         06/21/2017, 05:30:00 AM   Employee    \r
+
+      \        183         02/03/2018, 05:30:00 AM   Employee    \r
+
+      \        184         01/27/2014, 05:30:00 AM   Employee    \r
+
+      \        185         02/20/2015, 05:30:00 AM   Employee    \r
+
+      \        186         06/24/2016, 05:30:00 AM   Employee    \r
+
+      \        187         02/07/2017, 05:30:00 AM   Employee    \r
+
+      \        188         06/14/2015, 05:30:00 AM   Employee    \r
+
+      \        189         08/13/2015, 05:30:00 AM   Employee    \r
+
+      \        190         07/11/2016, 05:30:00 AM   Employee    \r
+
+      \        191         12/19/2017, 05:30:00 AM   Employee    \r
+
+      \        192         02/04/2014, 05:30:00 AM   Employee    \r
+
+      \        193         03/03/2015, 05:30:00 AM   Employee    \r
+
+      \        194         07/01/2016, 05:30:00 AM   Employee    \r
+
+      \        195         03/17/2017, 05:30:00 AM   Employee    \r
+
+      \        196         04/24/2016, 05:30:00 AM   Employee    \r
+
+      \        197         05/23/2016, 05:30:00 AM   Employee    \r
+
+      \        198         06/21/2017, 05:30:00 AM   Employee    \r
+
+      \        199         01/13/2018, 05:30:00 AM   Employee    \r
+
+      \        200         09/17/2013, 05:30:00 AM   Employee    \r
+
+      \        201         02/17/2014, 05:30:00 AM   Employee    \r
+
+      \        202         08/17/2015, 05:30:00 AM   Employee    \r
+
+      \        203         06/07/2012, 05:30:00 AM   Employee    \r
+
+      \        204         06/07/2012, 05:30:00 AM   Employee    \r
+
+      \        205         06/07/2012, 05:30:00 AM   Employee    \r
+
+      \        206         06/07/2012, 05:30:00 AM   Employee    \r
 
       \r
 
-      4. **M4.** For each employee, display `email` and a column `email_domain`
-      set to the literal `'@company.com'`.  \r
+      \        Elapsed: 00:00:00.007\r
+
+      \        107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "4. **M4.** For each employee, display `email` and a column
+      `email_domain` set to the literal `'@company.com'`.  \r
 
       \   **Hint:** Use a string literal with an alias; no concatenation
-      required for this part.\r
+      required for this part."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT email, '@company.com' AS email_domain\r
 
-      \r
-
-      5. **M5.** List `employee_id`, `salary`, `commission_pct`, and
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: ""
+    languageId: markdown
+  - kind: 1
+    value: "5. **M5.** List `employee_id`, `salary`, `commission_pct`, and
       `effective_commission` where effective_commission is NVL(commission_pct,
       0).  \r
 
-      \   **Hint:** Use `NVL(commission_pct, 0) AS effective_commission`.\r
+      \   **Hint:** Use `NVL(commission_pct, 0) AS effective_commission`."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT employee_id, salary, commission_pct, NVL(commission_pct, 0) AS
+      effective_commission\r
 
-      \r
-
-      6. **M6.** Display `first_name`, `last_name`, and a column `initials`
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: ""
+    languageId: markdown
+  - kind: 1
+    value: "6. **M6.** Display `first_name`, `last_name`, and a column `initials`
       formed by the first character of first_name and the first character of
       last_name (e.g., \"JD\").  \r
 
       \   **Hint:** Use SUBSTR(first_name, 1, 1) and SUBSTR(last_name, 1, 1)
-      concatenated.\r
+      concatenated."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT first_name, last_name, SUBSTR(first_name, 1, 1) ||
+      SUBSTR(last_name, 1, 1) AS initials\r
 
-      \r
-
-      7. **M7.** Show `employee_id`, `salary`, and `annual_salary` as salary *
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: ""
+    languageId: markdown
+  - kind: 1
+    value: "7. **M7.** Show `employee_id`, `salary`, and `annual_salary` as salary *
       12, and also `annual_plus_bonus` as salary * 12 * 1.1 (10% bonus).  \r
 
-      \   **Hint:** Two calculated columns with aliases.\r
+      \   **Hint:** Two calculated columns with aliases."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT employee_id, salary, salary * 12 AS annual_salary, salary * 12 *
+      1.1 AS annual_plus_bonus\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: ""
+    languageId: markdown
+  - kind: 1
+    value: "\r
 
       \r
 
