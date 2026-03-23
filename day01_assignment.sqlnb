@@ -1,0 +1,1134 @@
+cells:
+  - kind: 1
+    value: "# Day 1 Assignment: SQL Basics & SELECT\r
+
+      \r
+
+      All exercises use **hr.employees** and **hr.departments** only."
+    languageId: markdown
+  - kind: 1
+    value: "---\r
+
+      \r
+
+      ## Part 1: Practice Questions (With Answers and Explanations)\r
+
+      \r
+
+      ### Question 1  \r
+
+      List `employee_id`, `first_name`, and `last_name` from `hr.employees`."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT employee_id, first_name, last_name\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "EMPLOYEE_ID FIRST_NAME    LAST_NAME     \r
+
+      ----------- ------------- ------------- \r
+
+      100         Steven        King          \r
+
+      101         Neena         Yang          \r
+
+      102         Lex           Garcia        \r
+
+      103         Alexander     James         \r
+
+      104         Bruce         Miller        \r
+
+      105         David         Williams      \r
+
+      106         Valli         Jackson       \r
+
+      107         Diana         Nguyen        \r
+
+      108         Nancy         Gruenberg     \r
+
+      109         Daniel        Faviet        \r
+
+      110         John          Chen          \r
+
+      111         Ismael        Sciarra       \r
+
+      112         Jose Manuel   Urman         \r
+
+      113         Luis          Popp          \r
+
+      114         Den           Li            \r
+
+      115         Alexander     Khoo          \r
+
+      116         Shelli        Baida         \r
+
+      117         Sigal         Tobias        \r
+
+      118         Guy           Himuro        \r
+
+      119         Karen         Colmenares    \r
+
+      120         Matthew       Weiss         \r
+
+      121         Adam          Fripp         \r
+
+      122         Payam         Kaufling      \r
+
+      123         Shanta        Vollman       \r
+
+      124         Kevin         Mourgos       \r
+
+      125         Julia         Nayer         \r
+
+      126         Irene         Mikkilineni   \r
+
+      127         James         Landry        \r
+
+      128         Steven        Markle        \r
+
+      129         Laura         Bissot        \r
+
+      130         Mozhe         Atkinson      \r
+
+      131         James         Marlow        \r
+
+      132         TJ            Olson         \r
+
+      133         Jason         Mallin        \r
+
+      134         Michael       Rogers        \r
+
+      135         Ki            Gee           \r
+
+      136         Hazel         Philtanker    \r
+
+      137         Renske        Ladwig        \r
+
+      138         Stephen       Stiles        \r
+
+      139         John          Seo           \r
+
+      140         Joshua        Patel         \r
+
+      141         Trenna        Rajs          \r
+
+      142         Curtis        Davies        \r
+
+      143         Randall       Matos         \r
+
+      144         Peter         Vargas        \r
+
+      145         John          Singh         \r
+
+      146         Karen         Partners      \r
+
+      147         Alberto       Errazuriz     \r
+
+      148         Gerald        Cambrault     \r
+
+      149         Eleni         Zlotkey       \r
+
+      150         Sean          Tucker        \r
+
+      151         David         Bernstein     \r
+
+      152         Peter         Hall          \r
+
+      153         Christopher   Olsen         \r
+
+      154         Nanette       Cambrault     \r
+
+      155         Oliver        Tuvault       \r
+
+      156         Janette       King          \r
+
+      157         Patrick       Sully         \r
+
+      158         Allan         McEwen        \r
+
+      159         Lindsey       Smith         \r
+
+      160         Louise        Doran         \r
+
+      161         Sarath        Sewall        \r
+
+      162         Clara         Vishney       \r
+
+      163         Danielle      Greene        \r
+
+      164         Mattea        Marvins       \r
+
+      165         David         Lee           \r
+
+      166         Sundar        Ande          \r
+
+      167         Amit          Banda         \r
+
+      168         Lisa          Ozer          \r
+
+      169         Harrison      Bloom         \r
+
+      170         Tayler        Fox           \r
+
+      171         William       Smith         \r
+
+      172         Elizabeth     Bates         \r
+
+      173         Sundita       Kumar         \r
+
+      174         Ellen         Abel          \r
+
+      175         Alyssa        Hutton        \r
+
+      176         Jonathon      Taylor        \r
+
+      177         Jack          Livingston    \r
+
+      178         Kimberely     Grant         \r
+
+      179         Charles       Johnson       \r
+
+      180         Winston       Taylor        \r
+
+      181         Jean          Fleaur        \r
+
+      182         Martha        Sullivan      \r
+
+      183         Girard        Geoni         \r
+
+      184         Nandita       Sarchand      \r
+
+      185         Alexis        Bull          \r
+
+      186         Julia         Dellinger     \r
+
+      187         Anthony       Cabrio        \r
+
+      188         Kelly         Chung         \r
+
+      189         Jennifer      Dilly         \r
+
+      190         Timothy       Venzl         \r
+
+      191         Randall       Perkins       \r
+
+      192         Sarah         Bell          \r
+
+      193         Britney       Everett       \r
+
+      194         Samuel        McLeod        \r
+
+      195         Vance         Jones         \r
+
+      196         Alana         Walsh         \r
+
+      197         Kevin         Feeney        \r
+
+      198         Donald        OConnell      \r
+
+      199         Douglas       Grant         \r
+
+      200         Jennifer      Whalen        \r
+
+      201         Michael       Martinez      \r
+
+      202         Pat           Davis         \r
+
+      203         Susan         Jacobs        \r
+
+      204         Hermann       Brown         \r
+
+      205         Shelley       Higgins       \r
+
+      206         William       Gietz         \r
+
+      \r
+
+      Elapsed: 00:00:00.008\r
+
+      107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "\r
+
+      \r
+
+      ### Question 2  \r
+
+      Display the full name as a single column using concatenation (e.g.,
+      \"First Last\").\r
+
+      \r
+
+      **Answer:**\r
+
+      \r
+
+      **Explanation:** In Oracle, `||` concatenates strings. A space is added
+      between first and last name. `AS full_name` gives the column a clear
+      alias.\r
+
+      \r
+
+      ---"
+    languageId: markdown
+  - kind: 2
+    value: "SELECT first_name || ' ' || last_name AS full_name\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "FULL_NAME           \r
+
+      ------------------- \r
+
+      Ellen Abel          \r
+
+      Sundar Ande         \r
+
+      Mozhe Atkinson      \r
+
+      Shelli Baida        \r
+
+      Amit Banda          \r
+
+      Elizabeth Bates     \r
+
+      Sarah Bell          \r
+
+      David Bernstein     \r
+
+      Laura Bissot        \r
+
+      Harrison Bloom      \r
+
+      Hermann Brown       \r
+
+      Alexis Bull         \r
+
+      Anthony Cabrio      \r
+
+      Gerald Cambrault    \r
+
+      Nanette Cambrault   \r
+
+      John Chen           \r
+
+      Kelly Chung         \r
+
+      Karen Colmenares    \r
+
+      Curtis Davies       \r
+
+      Pat Davis           \r
+
+      Julia Dellinger     \r
+
+      Jennifer Dilly      \r
+
+      Louise Doran        \r
+
+      Alberto Errazuriz   \r
+
+      Britney Everett     \r
+
+      Daniel Faviet       \r
+
+      Kevin Feeney        \r
+
+      Jean Fleaur         \r
+
+      Tayler Fox          \r
+
+      Adam Fripp          \r
+
+      Lex Garcia          \r
+
+      Ki Gee              \r
+
+      Girard Geoni        \r
+
+      William Gietz       \r
+
+      Douglas Grant       \r
+
+      Kimberely Grant     \r
+
+      Danielle Greene     \r
+
+      Nancy Gruenberg     \r
+
+      Peter Hall          \r
+
+      Shelley Higgins     \r
+
+      Guy Himuro          \r
+
+      Alyssa Hutton       \r
+
+      Valli Jackson       \r
+
+      Susan Jacobs        \r
+
+      Alexander James     \r
+
+      Charles Johnson     \r
+
+      Vance Jones         \r
+
+      Payam Kaufling      \r
+
+      Alexander Khoo      \r
+
+      Janette King        \r
+
+      Steven King         \r
+
+      Sundita Kumar       \r
+
+      Renske Ladwig       \r
+
+      James Landry        \r
+
+      David Lee           \r
+
+      Den Li              \r
+
+      Jack Livingston     \r
+
+      Jason Mallin        \r
+
+      Steven Markle       \r
+
+      James Marlow        \r
+
+      Michael Martinez    \r
+
+      Mattea Marvins      \r
+
+      Randall Matos       \r
+
+      Allan McEwen        \r
+
+      Samuel McLeod       \r
+
+      Irene Mikkilineni   \r
+
+      Bruce Miller        \r
+
+      Kevin Mourgos       \r
+
+      Julia Nayer         \r
+
+      Diana Nguyen        \r
+
+      Donald OConnell     \r
+
+      Christopher Olsen   \r
+
+      TJ Olson            \r
+
+      Lisa Ozer           \r
+
+      Karen Partners      \r
+
+      Joshua Patel        \r
+
+      Randall Perkins     \r
+
+      Hazel Philtanker    \r
+
+      Luis Popp           \r
+
+      Trenna Rajs         \r
+
+      Michael Rogers      \r
+
+      Nandita Sarchand    \r
+
+      Ismael Sciarra      \r
+
+      John Seo            \r
+
+      Sarath Sewall       \r
+
+      John Singh          \r
+
+      Lindsey Smith       \r
+
+      William Smith       \r
+
+      Stephen Stiles      \r
+
+      Martha Sullivan     \r
+
+      Patrick Sully       \r
+
+      Jonathon Taylor     \r
+
+      Winston Taylor      \r
+
+      Sigal Tobias        \r
+
+      Sean Tucker         \r
+
+      Oliver Tuvault      \r
+
+      Jose Manuel Urman   \r
+
+      Peter Vargas        \r
+
+      Timothy Venzl       \r
+
+      Clara Vishney       \r
+
+      Shanta Vollman      \r
+
+      Alana Walsh         \r
+
+      Matthew Weiss       \r
+
+      Jennifer Whalen     \r
+
+      David Williams      \r
+
+      Neena Yang          \r
+
+      Eleni Zlotkey       \r
+
+      \r
+
+      Elapsed: 00:00:00.007\r
+
+      107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "\r
+
+      ### Question 3  \r
+
+      Calculate annual salary as `salary * 12` and give it the alias
+      `annual_salary`.\r
+
+      \r
+
+      **Explanation:** Use an arithmetic expression in the SELECT list. The
+      alias `annual_salary` is assigned with `AS`.\r
+
+      \r
+
+      ---"
+    languageId: markdown
+  - kind: 2
+    value: "SELECT employee_id, first_name, last_name, salary, salary * 12 AS
+      annual_salary\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "EMPLOYEE_ID FIRST_NAME    LAST_NAME     SALARY ANNUAL_SALARY \r
+
+      ----------- ------------- ------------- ------ ------------- \r
+
+      100         Steven        King          24000  288000        \r
+
+      101         Neena         Yang          17000  204000        \r
+
+      102         Lex           Garcia        17000  204000        \r
+
+      103         Alexander     James         9000   108000        \r
+
+      104         Bruce         Miller        6000   72000         \r
+
+      105         David         Williams      4800   57600         \r
+
+      106         Valli         Jackson       4800   57600         \r
+
+      107         Diana         Nguyen        4200   50400         \r
+
+      108         Nancy         Gruenberg     12008  144096        \r
+
+      109         Daniel        Faviet        9000   108000        \r
+
+      110         John          Chen          8200   98400         \r
+
+      111         Ismael        Sciarra       7700   92400         \r
+
+      112         Jose Manuel   Urman         7800   93600         \r
+
+      113         Luis          Popp          6900   82800         \r
+
+      114         Den           Li            11000  132000        \r
+
+      115         Alexander     Khoo          3100   37200         \r
+
+      116         Shelli        Baida         2900   34800         \r
+
+      117         Sigal         Tobias        2800   33600         \r
+
+      118         Guy           Himuro        2600   31200         \r
+
+      119         Karen         Colmenares    2500   30000         \r
+
+      120         Matthew       Weiss         8000   96000         \r
+
+      121         Adam          Fripp         8200   98400         \r
+
+      122         Payam         Kaufling      7900   94800         \r
+
+      123         Shanta        Vollman       6500   78000         \r
+
+      124         Kevin         Mourgos       5800   69600         \r
+
+      125         Julia         Nayer         3200   38400         \r
+
+      126         Irene         Mikkilineni   2700   32400         \r
+
+      127         James         Landry        2400   28800         \r
+
+      128         Steven        Markle        2200   26400         \r
+
+      129         Laura         Bissot        3300   39600         \r
+
+      130         Mozhe         Atkinson      2800   33600         \r
+
+      131         James         Marlow        2500   30000         \r
+
+      132         TJ            Olson         2100   25200         \r
+
+      133         Jason         Mallin        3300   39600         \r
+
+      134         Michael       Rogers        2900   34800         \r
+
+      135         Ki            Gee           2400   28800         \r
+
+      136         Hazel         Philtanker    2200   26400         \r
+
+      137         Renske        Ladwig        3600   43200         \r
+
+      138         Stephen       Stiles        3200   38400         \r
+
+      139         John          Seo           2700   32400         \r
+
+      140         Joshua        Patel         2500   30000         \r
+
+      141         Trenna        Rajs          3500   42000         \r
+
+      142         Curtis        Davies        3100   37200         \r
+
+      143         Randall       Matos         2600   31200         \r
+
+      144         Peter         Vargas        2500   30000         \r
+
+      145         John          Singh         14000  168000        \r
+
+      146         Karen         Partners      13500  162000        \r
+
+      147         Alberto       Errazuriz     12000  144000        \r
+
+      148         Gerald        Cambrault     11000  132000        \r
+
+      149         Eleni         Zlotkey       10500  126000        \r
+
+      150         Sean          Tucker        10000  120000        \r
+
+      151         David         Bernstein     9500   114000        \r
+
+      152         Peter         Hall          9000   108000        \r
+
+      153         Christopher   Olsen         8000   96000         \r
+
+      154         Nanette       Cambrault     7500   90000         \r
+
+      155         Oliver        Tuvault       7000   84000         \r
+
+      156         Janette       King          10000  120000        \r
+
+      157         Patrick       Sully         9500   114000        \r
+
+      158         Allan         McEwen        9000   108000        \r
+
+      159         Lindsey       Smith         8000   96000         \r
+
+      160         Louise        Doran         7500   90000         \r
+
+      161         Sarath        Sewall        7000   84000         \r
+
+      162         Clara         Vishney       10500  126000        \r
+
+      163         Danielle      Greene        9500   114000        \r
+
+      164         Mattea        Marvins       7200   86400         \r
+
+      165         David         Lee           6800   81600         \r
+
+      166         Sundar        Ande          6400   76800         \r
+
+      167         Amit          Banda         6200   74400         \r
+
+      168         Lisa          Ozer          11500  138000        \r
+
+      169         Harrison      Bloom         10000  120000        \r
+
+      170         Tayler        Fox           9600   115200        \r
+
+      171         William       Smith         7400   88800         \r
+
+      172         Elizabeth     Bates         7300   87600         \r
+
+      173         Sundita       Kumar         6100   73200         \r
+
+      174         Ellen         Abel          11000  132000        \r
+
+      175         Alyssa        Hutton        8800   105600        \r
+
+      176         Jonathon      Taylor        8600   103200        \r
+
+      177         Jack          Livingston    8400   100800        \r
+
+      178         Kimberely     Grant         7000   84000         \r
+
+      179         Charles       Johnson       6200   74400         \r
+
+      180         Winston       Taylor        3200   38400         \r
+
+      181         Jean          Fleaur        3100   37200         \r
+
+      182         Martha        Sullivan      2500   30000         \r
+
+      183         Girard        Geoni         2800   33600         \r
+
+      184         Nandita       Sarchand      4200   50400         \r
+
+      185         Alexis        Bull          4100   49200         \r
+
+      186         Julia         Dellinger     3400   40800         \r
+
+      187         Anthony       Cabrio        3000   36000         \r
+
+      188         Kelly         Chung         3800   45600         \r
+
+      189         Jennifer      Dilly         3600   43200         \r
+
+      190         Timothy       Venzl         2900   34800         \r
+
+      191         Randall       Perkins       2500   30000         \r
+
+      192         Sarah         Bell          4000   48000         \r
+
+      193         Britney       Everett       3900   46800         \r
+
+      194         Samuel        McLeod        3200   38400         \r
+
+      195         Vance         Jones         2800   33600         \r
+
+      196         Alana         Walsh         3100   37200         \r
+
+      197         Kevin         Feeney        3000   36000         \r
+
+      198         Donald        OConnell      2600   31200         \r
+
+      199         Douglas       Grant         2600   31200         \r
+
+      200         Jennifer      Whalen        4400   52800         \r
+
+      201         Michael       Martinez      13000  156000        \r
+
+      202         Pat           Davis         6000   72000         \r
+
+      203         Susan         Jacobs        6500   78000         \r
+
+      204         Hermann       Brown         10000  120000        \r
+
+      205         Shelley       Higgins       12008  144096        \r
+
+      206         William       Gietz         8300   99600         \r
+
+      \r
+
+      Elapsed: 00:00:00.007\r
+
+      107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "\r
+
+      \r
+
+      ## Part 2: Self-Practice (No Answers)\r
+
+      \r
+
+      Try these on your own using **hr.employees**.\r
+
+      \r
+
+      1. List all **distinct** values of `job_id`.\r
+
+      2. Show `commission_pct` and `salary` for the first 10 rows (use `FETCH
+      FIRST 10 ROWS ONLY` or equivalent).\r
+
+      3. Write a SELECT that returns each employee’s `employee_id` and a literal
+      value `'HR'` in a column named `department`.\r
+
+      \r
+
+      ---\r
+
+      \r
+
+      ## Part 3: Additional Practice — 20 Medium + 20 Hard Questions (With
+      Hints)\r
+
+      \r
+
+      All questions use **hr.employees** and **hr.departments** only.\r
+
+      \r
+
+      ### 20 Medium Questions\r
+
+      \r
+
+      1. **M1.** Display `employee_id`, `first_name`, `last_name`, and a new
+      column `full_name` that is first_name and last_name concatenated with a
+      comma between them (e.g., \"John, Doe\").  \r
+
+      \   **Hint:** Use `first_name || ', ' || last_name` and alias it as
+      `full_name`.\r
+
+      \r
+
+      2. **M2.** List `employee_id`, `salary`, and a column `bonus_10_pct`
+      showing 10% of salary (salary * 0.10).  \r
+
+      \   **Hint:** Use an arithmetic expression and alias.\r
+
+      \r
+
+      3. **M3.** Show `employee_id`, `hire_date`, and a literal column
+      `record_type` with value `'Employee'` for every row.  \r
+
+      \   **Hint:** Add `'Employee' AS record_type` in the SELECT list.\r
+
+      \r
+
+      4. **M4.** For each employee, display `email` and a column `email_domain`
+      set to the literal `'@company.com'`.  \r
+
+      \   **Hint:** Use a string literal with an alias; no concatenation
+      required for this part.\r
+
+      \r
+
+      5. **M5.** List `employee_id`, `salary`, `commission_pct`, and
+      `effective_commission` where effective_commission is NVL(commission_pct,
+      0).  \r
+
+      \   **Hint:** Use `NVL(commission_pct, 0) AS effective_commission`.\r
+
+      \r
+
+      6. **M6.** Display `first_name`, `last_name`, and a column `initials`
+      formed by the first character of first_name and the first character of
+      last_name (e.g., \"JD\").  \r
+
+      \   **Hint:** Use SUBSTR(first_name, 1, 1) and SUBSTR(last_name, 1, 1)
+      concatenated.\r
+
+      \r
+
+      7. **M7.** Show `employee_id`, `salary`, and `annual_salary` as salary *
+      12, and also `annual_plus_bonus` as salary * 12 * 1.1 (10% bonus).  \r
+
+      \   **Hint:** Two calculated columns with aliases.\r
+
+      \r
+
+      8. **M8.** List all columns from `hr.departments` using explicit column
+      names (department_id, department_name, manager_id, location_id).  \r
+
+      \   **Hint:** SELECT each column name from hr.departments; no *.\r
+
+      \r
+
+      9. **M9.** From `hr.employees`, select `employee_id` and a column
+      `description` that is the literal `'Emp#'` concatenated with employee_id
+      (cast to string if needed: use TO_CHAR(employee_id)).  \r
+
+      \   **Hint:** `'Emp#' || TO_CHAR(employee_id) AS description`.\r
+
+      \r
+
+      10. **M10.** Display `job_id`, `salary`, and a column `salary_band` that
+      is the literal `'Standard'` for every row.  \r
+
+      \    **Hint:** Add `'Standard' AS salary_band` in SELECT.\r
+
+      \r
+
+      11. **M11.** List `employee_id`, `first_name`, `last_name`, and a column
+      `display_name` as \"Last, First\" (last_name, comma space,
+      first_name).  \r
+
+      \    **Hint:** `last_name || ', ' || first_name AS display_name`.\r
+
+      \r
+
+      12. **M12.** Show `department_id` from `hr.departments` and a literal `1`
+      as column `sort_order`.  \r
+
+      \    **Hint:** SELECT department_id, 1 AS sort_order FROM
+      hr.departments.\r
+
+      \r
+
+      13. **M13.** From `hr.employees`, display `salary` and `monthly_net` as
+      salary * 0.85 (assuming 15% tax).  \r
+
+      \    **Hint:** salary * 0.85 AS monthly_net.\r
+
+      \r
+
+      14. **M14.** List `employee_id`, `commission_pct`, and
+      `commission_display` where NULL commission_pct is shown as 0 using
+      NVL.  \r
+
+      \    **Hint:** NVL(commission_pct, 0) AS commission_display.\r
+
+      \r
+
+      15. **M15.** Display `first_name`, `last_name`, `salary`, and a column
+      `compensation` that is salary * (1 + NVL(commission_pct, 0)).  \r
+
+      \    **Hint:** Total comp = salary + salary*commission_pct; factor as
+      salary*(1 + NVL(commission_pct,0)).\r
+
+      \r
+
+      16. **M16.** From `hr.departments`, list `department_name` and a literal
+      column `region` with value `'HQ'`.  \r
+
+      \    **Hint:** SELECT department_name, 'HQ' AS region FROM
+      hr.departments.\r
+
+      \r
+
+      17. **M17.** Show `employee_id`, `hire_date`, and a column `years_label`
+      with literal `'Years of service'`.  \r
+
+      \    **Hint:** Add a string literal with alias years_label.\r
+
+      \r
+
+      18. **M18.** List `employee_id`, `salary`, and `double_salary` as salary *
+      2.  \r
+
+      \    **Hint:** Simple arithmetic expression with alias.\r
+
+      \r
+
+      19. **M19.** From `hr.employees`, display `manager_id` and a column
+      `has_manager` that is the literal `'Yes'` when manager_id is not null and
+      `'No'` when manager_id is null (use NVL2: NVL2(manager_id, 'Yes',
+      'No')).  \r
+
+      \    **Hint:** NVL2(manager_id, 'Yes', 'No') AS has_manager.\r
+
+      \r
+
+      20. **M20.** Show `department_id`, `department_name` from
+      `hr.departments`, and a calculated column `dept_code` as the first 3
+      characters of department_name (use SUBSTR).  \r
+
+      \    **Hint:** SUBSTR(department_name, 1, 3) AS dept_code.\r
+
+      \r
+
+      ### 20 Hard Questions\r
+
+      \r
+
+      1. **H1.** Display `employee_id`, `first_name`, `last_name`, `salary`, and
+      a column `salary_rank_label` that is 'High' if salary >= 10000, 'Medium'
+      if salary >= 5000 and < 10000, else 'Low'. Use CASE.  \r
+
+      \   **Hint:** CASE WHEN salary >= 10000 THEN 'High' WHEN salary >= 5000
+      THEN 'Medium' ELSE 'Low' END.\r
+
+      \r
+
+      2. **H2.** List `employee_id`, `salary`, `commission_pct`, and
+      `total_comp` as salary + (salary * NVL(commission_pct, 0)), formatted to 2
+      decimal places using ROUND(..., 2).  \r
+
+      \   **Hint:** ROUND(salary * (1 + NVL(commission_pct,0)), 2) AS
+      total_comp.\r
+
+      \r
+
+      3. **H3.** From `hr.employees`, show `employee_id`, `email`, and
+      `email_upper` as UPPER(email). Also show `email_length` as
+      LENGTH(email).  \r
+
+      \   **Hint:** Use UPPER(email) and LENGTH(email) with aliases.\r
+
+      \r
+
+      4. **H4.** Display `department_id` from `hr.departments`,
+      `department_name`, and a column `name_length` (number of characters in
+      department_name).  \r
+
+      \   **Hint:** LENGTH(department_name) AS name_length.\r
+
+      \r
+
+      5. **H5.** List `employee_id`, `first_name`, `last_name`, and a column
+      `reverse_name` as last_name concatenated with first_name (no comma).  \r
+
+      \   **Hint:** last_name || first_name AS reverse_name (add space if you
+      want).\r
+
+      \r
+
+      6. **H6.** Show `employee_id`, `hire_date`, and a literal column
+      `data_source` with value `'HR.EMPLOYEES'`.  \r
+
+      \   **Hint:** 'HR.EMPLOYEES' AS data_source.\r
+
+      \r
+
+      7. **H7.** From `hr.employees`, display `job_id`, `salary`, and
+      `salary_percentage` as (salary / (SELECT SUM(salary) FROM hr.employees)) *
+      100, rounded to 2 decimals.  \r
+
+      \   **Hint:** Scalar subquery in SELECT: ROUND(salary * 100.0 / (SELECT
+      SUM(salary) FROM hr.employees), 2).\r
+
+      \r
+
+      8. **H8.** List `employee_id`, `first_name`, `last_name`, and a column
+      `formal_name` as \"Mr. \" or \"Ms. \" (your choice) concatenated with
+      first_name and last_name.  \r
+
+      \   **Hint:** 'Mr. ' || first_name || ' ' || last_name AS formal_name.\r
+
+      \r
+
+      9. **H9.** Display `employee_id`, `salary`, and `annual_with_raise` as
+      (salary * 12) * 1.05 (5% annual raise).  \r
+
+      \   **Hint:** salary * 12 * 1.05 AS annual_with_raise.\r
+
+      \r
+
+      10. **H10.** From `hr.departments`, show `department_id`,
+      `department_name`, and a column `id_name` that concatenates department_id
+      and department_name with a hyphen (e.g., \"10-Administration\"). Use
+      TO_CHAR(department_id) for the number.  \r
+
+      \    **Hint:** TO_CHAR(department_id) || '-' || department_name AS
+      id_name.\r
+
+      \r
+
+      11. **H11.** List `employee_id`, `commission_pct`, and
+      `commission_category`: 'Commissioned' if commission_pct is not null,
+      'Non-commissioned' if null. Use NVL2 or CASE.  \r
+
+      \    **Hint:** NVL2(commission_pct, 'Commissioned', 'Non-commissioned') AS
+      commission_category.\r
+
+      \r
+
+      12. **H12.** Show `employee_id`, `first_name`, `last_name`, `salary`, and
+      a column `salary_expression` that is the literal string `'salary * 12'`
+      (not the result of the calculation).  \r
+
+      \    **Hint:** 'salary * 12' AS salary_expression — a string literal.\r
+
+      \r
+
+      13. **H13.** From `hr.employees`, display `employee_id`, `job_id`, and a
+      column `job_salary_label` as job_id concatenated with ':' and salary
+      (e.g., \"SA_REP:9000\"). Use TO_CHAR(salary).  \r
+
+      \    **Hint:** job_id || ':' || TO_CHAR(salary) AS job_salary_label.\r
+
+      \r
+
+      14. **H14.** List `employee_id`, `salary`, and `tax_bracket` as '20%' if
+      salary >= 10000, '15%' if salary >= 5000, else '10%'. Use CASE.  \r
+
+      \    **Hint:** CASE WHEN salary >= 10000 THEN '20%' WHEN salary >= 5000
+      THEN '15%' ELSE '10%' END.\r
+
+      \r
+
+      15. **H15.** Display `department_id`, `department_name` from
+      `hr.departments`, and a column `dept_info` that is \"Department \"
+      followed by department_id and \" - \" and department_name.  \r
+
+      \    **Hint:** 'Department ' || TO_CHAR(department_id) || ' - ' ||
+      department_name AS dept_info.\r
+
+      \r
+
+      16. **H16.** From `hr.employees`, show `employee_id`, `first_name`,
+      `last_name`, and `full_name_reversed` as last_name, space, first_name
+      (e.g., \"Doe John\").  \r
+
+      \    **Hint:** last_name || ' ' || first_name AS full_name_reversed.\r
+
+      \r
+
+      17. **H17.** List `employee_id`, `salary`, `commission_pct`, and
+      `effective_salary` as salary when commission_pct is null, otherwise salary
+      * (1 + commission_pct). Use NVL2 or CASE.  \r
+
+      \    **Hint:** NVL2(commission_pct, salary * (1 + commission_pct), salary)
+      AS effective_salary.\r
+
+      \r
+
+      18. **H18.** Show `employee_id`, `hire_date`, and a column `hire_year`
+      that is the year from hire_date (use EXTRACT(YEAR FROM hire_date) in
+      Oracle).  \r
+
+      \    **Hint:** EXTRACT(YEAR FROM hire_date) AS hire_year.\r
+
+      \r
+
+      19. **H19.** From `hr.departments`, display `department_name` and a column
+      `word_count` as the number of words (simplified: 1 + number of spaces, or
+      use a formula based on LENGTH and REPLACE of spaces). For simplicity, use
+      LENGTH(department_name) - LENGTH(REPLACE(department_name, ' ', '')) + 1 if
+      names have spaces.  \r
+
+      \    **Hint:** For single-word names, word_count can be 1; or 1 +
+      LENGTH(REPLACE(department_name,' ','')) -
+      LENGTH(REPLACE(REPLACE(department_name,' ',''),' ','')) — simpler: just
+      use LENGTH(department_name) as a proxy or 1 for all.\r
+
+      \r
+
+      20. **H20.** List `employee_id`, `first_name`, `last_name`, and a column
+      `name_with_id` as \"[\" || employee_id || \"] \" || first_name || \" \" ||
+      last_name (e.g., \"[100] Steven King\").  \r
+
+      \    **Hint:** '[' || TO_CHAR(employee_id) || '] ' || first_name || ' ' ||
+      last_name AS name_with_id.\r\n"
+    languageId: markdown
+  - kind: 1
+    value: ""
+    languageId: markdown
+  - kind: 2
+    value: ""
+    languageId: oracle-sql
