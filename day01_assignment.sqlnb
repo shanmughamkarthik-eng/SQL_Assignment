@@ -1856,7 +1856,231 @@ cells:
       FROM hr.employees;"
     languageId: oracle-sql
   - kind: 1
-    value: ""
+    value: "EMAIL       EMAIL_DOMAIN   \r
+
+      ----------- -------------- \r
+
+      ABANDA      @company.com   \r
+
+      ABULL       @company.com   \r
+
+      ACABRIO     @company.com   \r
+
+      AERRAZUR    @company.com   \r
+
+      AFRIPP      @company.com   \r
+
+      AHUTTON     @company.com   \r
+
+      AJAMES      @company.com   \r
+
+      AKHOO       @company.com   \r
+
+      AMCEWEN     @company.com   \r
+
+      AWALSH      @company.com   \r
+
+      BEVERETT    @company.com   \r
+
+      BMILLER     @company.com   \r
+
+      CDAVIES     @company.com   \r
+
+      CJOHNSON    @company.com   \r
+
+      COLSEN      @company.com   \r
+
+      CVISHNEY    @company.com   \r
+
+      DBERNSTE    @company.com   \r
+
+      DFAVIET     @company.com   \r
+
+      DGRANT      @company.com   \r
+
+      DGREENE     @company.com   \r
+
+      DLEE        @company.com   \r
+
+      DLI         @company.com   \r
+
+      DNGUYEN     @company.com   \r
+
+      DOCONNEL    @company.com   \r
+
+      DWILLIAMS   @company.com   \r
+
+      EABEL       @company.com   \r
+
+      EBATES      @company.com   \r
+
+      EZLOTKEY    @company.com   \r
+
+      GCAMBRAU    @company.com   \r
+
+      GGEONI      @company.com   \r
+
+      GHIMURO     @company.com   \r
+
+      HBLOOM      @company.com   \r
+
+      HBROWN      @company.com   \r
+
+      HPHILTAN    @company.com   \r
+
+      IMIKKILI    @company.com   \r
+
+      ISCIARRA    @company.com   \r
+
+      JAMRLOW     @company.com   \r
+
+      JCHEN       @company.com   \r
+
+      JDELLING    @company.com   \r
+
+      JDILLY      @company.com   \r
+
+      JFLEAUR     @company.com   \r
+
+      JKING       @company.com   \r
+
+      JLANDRY     @company.com   \r
+
+      JLIVINGS    @company.com   \r
+
+      JMALLIN     @company.com   \r
+
+      JMURMAN     @company.com   \r
+
+      JNAYER      @company.com   \r
+
+      JPATEL      @company.com   \r
+
+      JSEO        @company.com   \r
+
+      JSINGH      @company.com   \r
+
+      JTAYLOR     @company.com   \r
+
+      JWHALEN     @company.com   \r
+
+      KCHUNG      @company.com   \r
+
+      KCOLMENA    @company.com   \r
+
+      KFEENEY     @company.com   \r
+
+      KGEE        @company.com   \r
+
+      KGRANT      @company.com   \r
+
+      KMOURGOS    @company.com   \r
+
+      KPARTNER    @company.com   \r
+
+      LBISSOT     @company.com   \r
+
+      LDORAN      @company.com   \r
+
+      LGARCIA     @company.com   \r
+
+      LOZER       @company.com   \r
+
+      LPOPP       @company.com   \r
+
+      LSMITH      @company.com   \r
+
+      MATKINSO    @company.com   \r
+
+      MMARTINE    @company.com   \r
+
+      MMARVINS    @company.com   \r
+
+      MROGERS     @company.com   \r
+
+      MSULLIVA    @company.com   \r
+
+      MWEISS      @company.com   \r
+
+      NCAMBRAU    @company.com   \r
+
+      NGRUENBE    @company.com   \r
+
+      NSARCHAN    @company.com   \r
+
+      NYANG       @company.com   \r
+
+      OTUVAULT    @company.com   \r
+
+      PDAVIS      @company.com   \r
+
+      PHALL       @company.com   \r
+
+      PKAUFLIN    @company.com   \r
+
+      PSULLY      @company.com   \r
+
+      PVARGAS     @company.com   \r
+
+      RLADWIG     @company.com   \r
+
+      RMATOS      @company.com   \r
+
+      RPERKINS    @company.com   \r
+
+      SANDE       @company.com   \r
+
+      SBAIDA      @company.com   \r
+
+      SBELL       @company.com   \r
+
+      SHIGGINS    @company.com   \r
+
+      SJACOBS     @company.com   \r
+
+      SKING       @company.com   \r
+
+      SKUMAR      @company.com   \r
+
+      SMARKLE     @company.com   \r
+
+      SMCLEOD     @company.com   \r
+
+      SSEWALL     @company.com   \r
+
+      SSTILES     @company.com   \r
+
+      STOBIAS     @company.com   \r
+
+      STUCKER     @company.com   \r
+
+      SVOLLMAN    @company.com   \r
+
+      TFOX        @company.com   \r
+
+      TJOLSON     @company.com   \r
+
+      TRAJS       @company.com   \r
+
+      TVENZL      @company.com   \r
+
+      VJACKSON    @company.com   \r
+
+      VJONES      @company.com   \r
+
+      WGIETZ      @company.com   \r
+
+      WSMITH      @company.com   \r
+
+      WTAYLOR     @company.com   \r
+
+      \r
+
+      Elapsed: 00:00:00.008\r
+
+      107 rows selected. \r
+
+      \r\n"
     languageId: markdown
   - kind: 1
     value: "5. **M5.** List `employee_id`, `salary`, `commission_pct`, and
