@@ -758,11 +758,7 @@ cells:
       \r\n"
     languageId: markdown
   - kind: 1
-    value: "\r
-
-      \r
-
-      ## Part 2: Self-Practice (No Answers)\r
+    value: "## Part 2: Self-Practice (No Answers)\r
 
       \r
 
@@ -780,11 +776,111 @@ cells:
 
       \r
 
-      ---\r
+      ---"
+    languageId: markdown
+  - kind: 2
+    value: "-- 1. List all **distinct** values of `job_id`.\r
+
+      SELECT DISTINCT job_id\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "JOB_ID       \r
+
+      ------------ \r
+
+      AC_ACCOUNT   \r
+
+      AC_MGR       \r
+
+      AD_ASST      \r
+
+      AD_PRES      \r
+
+      AD_VP        \r
+
+      FI_ACCOUNT   \r
+
+      FI_MGR       \r
+
+      HR_REP       \r
+
+      IT_PROG      \r
+
+      MK_MAN       \r
+
+      MK_REP       \r
+
+      PR_REP       \r
+
+      PU_CLERK     \r
+
+      PU_MAN       \r
+
+      SA_MAN       \r
+
+      SA_REP       \r
+
+      SH_CLERK     \r
+
+      ST_CLERK     \r
+
+      ST_MAN       \r
 
       \r
 
-      ## Part 3: Additional Practice — 20 Medium + 20 Hard Questions (With
+      Elapsed: 00:00:00.009\r
+
+      19 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 2
+    value: "-- 2. Show `commission_pct` and `salary` for the first 10 rows (use
+      `FETCH FIRST 10 ROWS ONLY` or equivalent).\r
+
+      SELECT commission_pct, salary\r
+
+      FROM hr.employees\r
+
+      FETCH FIRST 10 ROWS ONLY;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "COMMISSION_PCT SALARY \r
+
+      -------------- ------ \r
+
+      \               24000  \r
+
+      \               17000  \r
+
+      \               17000  \r
+
+      \               9000   \r
+
+      \               6000   \r
+
+      \               4800   \r
+
+      \               4800   \r
+
+      \               4200   \r
+
+      \               12008  \r
+
+      \               9000   \r
+
+      \r
+
+      Elapsed: 00:00:00.007\r
+
+      10 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "## Part 3: Additional Practice — 20 Medium + 20 Hard Questions (With
       Hints)\r
 
       \r
