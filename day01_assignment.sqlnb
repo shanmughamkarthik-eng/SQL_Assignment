@@ -2820,39 +2820,343 @@ cells:
       \r\n"
     languageId: markdown
   - kind: 1
-    value: "\r
-
-      \r
-
-      8. **M8.** List all columns from `hr.departments` using explicit column
+    value: "8. **M8.** List all columns from `hr.departments` using explicit column
       names (department_id, department_name, manager_id, location_id).  \r
 
-      \   **Hint:** SELECT each column name from hr.departments; no *.\r
+      \   **Hint:** SELECT each column name from hr.departments; no *."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT department_id, department_name, manager_id, location_id\r
+
+      FROM hr.departments;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "    DEPARTMENT_ID DEPARTMENT_NAME        MANAGER_ID LOCATION_ID \r
+
+      \    ------------- ---------------------- ---------- ----------- \r
+
+      \    10            Administration         200        1700        \r
+
+      \    20            Marketing              201        1800        \r
+
+      \    30            Purchasing             114        1700        \r
+
+      \    40            Human Resources        203        2400        \r
+
+      \    50            Shipping               121        1500        \r
+
+      \    60            IT                     103        1400        \r
+
+      \    70            Public Relations       204        2700        \r
+
+      \    80            Sales                  145        2500        \r
+
+      \    90            Executive              100        1700        \r
+
+      \    100           Finance                108        1700        \r
+
+      \    110           Accounting             205        1700        \r
+
+      \    120           Treasury                          1700        \r
+
+      \    130           Corporate Tax                     1700        \r
+
+      \    140           Control And Credit                1700        \r
+
+      \    150           Shareholder Services              1700        \r
+
+      \    160           Benefits                          1700        \r
+
+      \    170           Manufacturing                     1700        \r
+
+      \    180           Construction                      1700        \r
+
+      \    190           Contracting                       1700        \r
+
+      \    200           Operations                        1700        \r
+
+      \    210           IT Support                        1700        \r
+
+      \    220           NOC                               1700        \r
+
+      \    230           IT Helpdesk                       1700        \r
+
+      \    240           Government Sales                  1700        \r
+
+      \    250           Retail Sales                      1700        \r
+
+      \    260           Recruiting                        1700        \r
+
+      \    270           Payroll                           1700        \r
 
       \r
 
-      9. **M9.** From `hr.employees`, select `employee_id` and a column
+      \    Elapsed: 00:00:00.006\r
+
+      \    27 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "9. **M9.** From `hr.employees`, select `employee_id` and a column
       `description` that is the literal `'Emp#'` concatenated with employee_id
       (cast to string if needed: use TO_CHAR(employee_id)).  \r
 
-      \   **Hint:** `'Emp#' || TO_CHAR(employee_id) AS description`.\r
+      \   **Hint:** `'Emp#' || TO_CHAR(employee_id) AS description`."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT employee_id, 'Emp#' || TO_CHAR(employee_id) AS description\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "    EMPLOYEE_ID DESCRIPTION \r
+
+      \    ----------- ----------- \r
+
+      \    100         Emp#100     \r
+
+      \    101         Emp#101     \r
+
+      \    102         Emp#102     \r
+
+      \    103         Emp#103     \r
+
+      \    104         Emp#104     \r
+
+      \    105         Emp#105     \r
+
+      \    106         Emp#106     \r
+
+      \    107         Emp#107     \r
+
+      \    108         Emp#108     \r
+
+      \    109         Emp#109     \r
+
+      \    110         Emp#110     \r
+
+      \    111         Emp#111     \r
+
+      \    112         Emp#112     \r
+
+      \    113         Emp#113     \r
+
+      \    114         Emp#114     \r
+
+      \    115         Emp#115     \r
+
+      \    116         Emp#116     \r
+
+      \    117         Emp#117     \r
+
+      \    118         Emp#118     \r
+
+      \    119         Emp#119     \r
+
+      \    120         Emp#120     \r
+
+      \    121         Emp#121     \r
+
+      \    122         Emp#122     \r
+
+      \    123         Emp#123     \r
+
+      \    124         Emp#124     \r
+
+      \    125         Emp#125     \r
+
+      \    126         Emp#126     \r
+
+      \    127         Emp#127     \r
+
+      \    128         Emp#128     \r
+
+      \    129         Emp#129     \r
+
+      \    130         Emp#130     \r
+
+      \    131         Emp#131     \r
+
+      \    132         Emp#132     \r
+
+      \    133         Emp#133     \r
+
+      \    134         Emp#134     \r
+
+      \    135         Emp#135     \r
+
+      \    136         Emp#136     \r
+
+      \    137         Emp#137     \r
+
+      \    138         Emp#138     \r
+
+      \    139         Emp#139     \r
+
+      \    140         Emp#140     \r
+
+      \    141         Emp#141     \r
+
+      \    142         Emp#142     \r
+
+      \    143         Emp#143     \r
+
+      \    144         Emp#144     \r
+
+      \    145         Emp#145     \r
+
+      \    146         Emp#146     \r
+
+      \    147         Emp#147     \r
+
+      \    148         Emp#148     \r
+
+      \    149         Emp#149     \r
+
+      \    150         Emp#150     \r
+
+      \    151         Emp#151     \r
+
+      \    152         Emp#152     \r
+
+      \    153         Emp#153     \r
+
+      \    154         Emp#154     \r
+
+      \    155         Emp#155     \r
+
+      \    156         Emp#156     \r
+
+      \    157         Emp#157     \r
+
+      \    158         Emp#158     \r
+
+      \    159         Emp#159     \r
+
+      \    160         Emp#160     \r
+
+      \    161         Emp#161     \r
+
+      \    162         Emp#162     \r
+
+      \    163         Emp#163     \r
+
+      \    164         Emp#164     \r
+
+      \    165         Emp#165     \r
+
+      \    166         Emp#166     \r
+
+      \    167         Emp#167     \r
+
+      \    168         Emp#168     \r
+
+      \    169         Emp#169     \r
+
+      \    170         Emp#170     \r
+
+      \    171         Emp#171     \r
+
+      \    172         Emp#172     \r
+
+      \    173         Emp#173     \r
+
+      \    174         Emp#174     \r
+
+      \    175         Emp#175     \r
+
+      \    176         Emp#176     \r
+
+      \    177         Emp#177     \r
+
+      \    178         Emp#178     \r
+
+      \    179         Emp#179     \r
+
+      \    180         Emp#180     \r
+
+      \    181         Emp#181     \r
+
+      \    182         Emp#182     \r
+
+      \    183         Emp#183     \r
+
+      \    184         Emp#184     \r
+
+      \    185         Emp#185     \r
+
+      \    186         Emp#186     \r
+
+      \    187         Emp#187     \r
+
+      \    188         Emp#188     \r
+
+      \    189         Emp#189     \r
+
+      \    190         Emp#190     \r
+
+      \    191         Emp#191     \r
+
+      \    192         Emp#192     \r
+
+      \    193         Emp#193     \r
+
+      \    194         Emp#194     \r
+
+      \    195         Emp#195     \r
+
+      \    196         Emp#196     \r
+
+      \    197         Emp#197     \r
+
+      \    198         Emp#198     \r
+
+      \    199         Emp#199     \r
+
+      \    200         Emp#200     \r
+
+      \    201         Emp#201     \r
+
+      \    202         Emp#202     \r
+
+      \    203         Emp#203     \r
+
+      \    204         Emp#204     \r
+
+      \    205         Emp#205     \r
+
+      \    206         Emp#206     \r
 
       \r
 
-      10. **M10.** Display `job_id`, `salary`, and a column `salary_band` that
+      \    Elapsed: 00:00:00.008\r
+
+      \    107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "10. **M10.** Display `job_id`, `salary`, and a column `salary_band` that
       is the literal `'Standard'` for every row.  \r
 
-      \    **Hint:** Add `'Standard' AS salary_band` in SELECT.\r
+      \    **Hint:** Add `'Standard' AS salary_band` in SELECT."
+    languageId: markdown
+  - kind: 2
+    value: "10. **M10.** Display `job_id`, `salary`, and a column `salary_band` that
+      is the literal `'Standard'` for every row.  \r
 
-      \r
-
-      11. **M11.** List `employee_id`, `first_name`, `last_name`, and a column
+      \    **Hint:** Add `'Standard' AS salary_band` in SELECT."
+    languageId: oracle-sql
+  - kind: 1
+    value: "11. **M11.** List `employee_id`, `first_name`, `last_name`, and a column
       `display_name` as \"Last, First\" (last_name, comma space,
       first_name).  \r
 
-      \    **Hint:** `last_name || ', ' || first_name AS display_name`.\r
-
-      \r
+      \    **Hint:** `last_name || ', ' || first_name AS display_name`.\r\n"
+    languageId: markdown
+  - kind: 1
+    value: "\r
 
       12. **M12.** Show `department_id` from `hr.departments` and a literal `1`
       as column `sort_order`.  \r
@@ -2860,32 +3164,32 @@ cells:
       \    **Hint:** SELECT department_id, 1 AS sort_order FROM
       hr.departments.\r
 
-      \r
-
-      13. **M13.** From `hr.employees`, display `salary` and `monthly_net` as
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "13. **M13.** From `hr.employees`, display `salary` and `monthly_net` as
       salary * 0.85 (assuming 15% tax).  \r
 
       \    **Hint:** salary * 0.85 AS monthly_net.\r
 
-      \r
-
-      14. **M14.** List `employee_id`, `commission_pct`, and
+      \r\n"
+    languageId: markdown
+  - kind: 1
+    value: "14. **M14.** List `employee_id`, `commission_pct`, and
       `commission_display` where NULL commission_pct is shown as 0 using
       NVL.  \r
 
-      \    **Hint:** NVL(commission_pct, 0) AS commission_display.\r
-
-      \r
-
-      15. **M15.** Display `first_name`, `last_name`, `salary`, and a column
+      \    **Hint:** NVL(commission_pct, 0) AS commission_display."
+    languageId: markdown
+  - kind: 1
+    value: "15. **M15.** Display `first_name`, `last_name`, `salary`, and a column
       `compensation` that is salary * (1 + NVL(commission_pct, 0)).  \r
 
       \    **Hint:** Total comp = salary + salary*commission_pct; factor as
-      salary*(1 + NVL(commission_pct,0)).\r
-
-      \r
-
-      16. **M16.** From `hr.departments`, list `department_name` and a literal
+      salary*(1 + NVL(commission_pct,0))."
+    languageId: markdown
+  - kind: 1
+    value: "16. **M16.** From `hr.departments`, list `department_name` and a literal
       column `region` with value `'HQ'`.  \r
 
       \    **Hint:** SELECT department_name, 'HQ' AS region FROM
