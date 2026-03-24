@@ -3377,6 +3377,239 @@ cells:
 
       \    **Hint:** `last_name || ', ' || first_name AS display_name`."
     languageId: markdown
+  - kind: 2
+    value: "SELECT employee_id, first_name, last_name, last_name || ', ' ||
+      first_name AS full_name\r
+
+      FROM hr.employees;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "    EMPLOYEE_ID FIRST_NAME    LAST_NAME     FULL_NAME            \r
+
+      \    ----------- ------------- ------------- -------------------- \r
+
+      \    100         Steven        King          King, Steven         \r
+
+      \    101         Neena         Yang          Yang, Neena          \r
+
+      \    102         Lex           Garcia        Garcia, Lex          \r
+
+      \    103         Alexander     James         James, Alexander     \r
+
+      \    104         Bruce         Miller        Miller, Bruce        \r
+
+      \    105         David         Williams      Williams, David      \r
+
+      \    106         Valli         Jackson       Jackson, Valli       \r
+
+      \    107         Diana         Nguyen        Nguyen, Diana        \r
+
+      \    108         Nancy         Gruenberg     Gruenberg, Nancy     \r
+
+      \    109         Daniel        Faviet        Faviet, Daniel       \r
+
+      \    110         John          Chen          Chen, John           \r
+
+      \    111         Ismael        Sciarra       Sciarra, Ismael      \r
+
+      \    112         Jose Manuel   Urman         Urman, Jose Manuel   \r
+
+      \    113         Luis          Popp          Popp, Luis           \r
+
+      \    114         Den           Li            Li, Den              \r
+
+      \    115         Alexander     Khoo          Khoo, Alexander      \r
+
+      \    116         Shelli        Baida         Baida, Shelli        \r
+
+      \    117         Sigal         Tobias        Tobias, Sigal        \r
+
+      \    118         Guy           Himuro        Himuro, Guy          \r
+
+      \    119         Karen         Colmenares    Colmenares, Karen    \r
+
+      \    120         Matthew       Weiss         Weiss, Matthew       \r
+
+      \    121         Adam          Fripp         Fripp, Adam          \r
+
+      \    122         Payam         Kaufling      Kaufling, Payam      \r
+
+      \    123         Shanta        Vollman       Vollman, Shanta      \r
+
+      \    124         Kevin         Mourgos       Mourgos, Kevin       \r
+
+      \    125         Julia         Nayer         Nayer, Julia         \r
+
+      \    126         Irene         Mikkilineni   Mikkilineni, Irene   \r
+
+      \    127         James         Landry        Landry, James        \r
+
+      \    128         Steven        Markle        Markle, Steven       \r
+
+      \    129         Laura         Bissot        Bissot, Laura        \r
+
+      \    130         Mozhe         Atkinson      Atkinson, Mozhe      \r
+
+      \    131         James         Marlow        Marlow, James        \r
+
+      \    132         TJ            Olson         Olson, TJ            \r
+
+      \    133         Jason         Mallin        Mallin, Jason        \r
+
+      \    134         Michael       Rogers        Rogers, Michael      \r
+
+      \    135         Ki            Gee           Gee, Ki              \r
+
+      \    136         Hazel         Philtanker    Philtanker, Hazel    \r
+
+      \    137         Renske        Ladwig        Ladwig, Renske       \r
+
+      \    138         Stephen       Stiles        Stiles, Stephen      \r
+
+      \    139         John          Seo           Seo, John            \r
+
+      \    140         Joshua        Patel         Patel, Joshua        \r
+
+      \    141         Trenna        Rajs          Rajs, Trenna         \r
+
+      \    142         Curtis        Davies        Davies, Curtis       \r
+
+      \    143         Randall       Matos         Matos, Randall       \r
+
+      \    144         Peter         Vargas        Vargas, Peter        \r
+
+      \    145         John          Singh         Singh, John          \r
+
+      \    146         Karen         Partners      Partners, Karen      \r
+
+      \    147         Alberto       Errazuriz     Errazuriz, Alberto   \r
+
+      \    148         Gerald        Cambrault     Cambrault, Gerald    \r
+
+      \    149         Eleni         Zlotkey       Zlotkey, Eleni       \r
+
+      \    150         Sean          Tucker        Tucker, Sean         \r
+
+      \    151         David         Bernstein     Bernstein, David     \r
+
+      \    152         Peter         Hall          Hall, Peter          \r
+
+      \    153         Christopher   Olsen         Olsen, Christopher   \r
+
+      \    154         Nanette       Cambrault     Cambrault, Nanette   \r
+
+      \    155         Oliver        Tuvault       Tuvault, Oliver      \r
+
+      \    156         Janette       King          King, Janette        \r
+
+      \    157         Patrick       Sully         Sully, Patrick       \r
+
+      \    158         Allan         McEwen        McEwen, Allan        \r
+
+      \    159         Lindsey       Smith         Smith, Lindsey       \r
+
+      \    160         Louise        Doran         Doran, Louise        \r
+
+      \    161         Sarath        Sewall        Sewall, Sarath       \r
+
+      \    162         Clara         Vishney       Vishney, Clara       \r
+
+      \    163         Danielle      Greene        Greene, Danielle     \r
+
+      \    164         Mattea        Marvins       Marvins, Mattea      \r
+
+      \    165         David         Lee           Lee, David           \r
+
+      \    166         Sundar        Ande          Ande, Sundar         \r
+
+      \    167         Amit          Banda         Banda, Amit          \r
+
+      \    168         Lisa          Ozer          Ozer, Lisa           \r
+
+      \    169         Harrison      Bloom         Bloom, Harrison      \r
+
+      \    170         Tayler        Fox           Fox, Tayler          \r
+
+      \    171         William       Smith         Smith, William       \r
+
+      \    172         Elizabeth     Bates         Bates, Elizabeth     \r
+
+      \    173         Sundita       Kumar         Kumar, Sundita       \r
+
+      \    174         Ellen         Abel          Abel, Ellen          \r
+
+      \    175         Alyssa        Hutton        Hutton, Alyssa       \r
+
+      \    176         Jonathon      Taylor        Taylor, Jonathon     \r
+
+      \    177         Jack          Livingston    Livingston, Jack     \r
+
+      \    178         Kimberely     Grant         Grant, Kimberely     \r
+
+      \    179         Charles       Johnson       Johnson, Charles     \r
+
+      \    180         Winston       Taylor        Taylor, Winston      \r
+
+      \    181         Jean          Fleaur        Fleaur, Jean         \r
+
+      \    182         Martha        Sullivan      Sullivan, Martha     \r
+
+      \    183         Girard        Geoni         Geoni, Girard        \r
+
+      \    184         Nandita       Sarchand      Sarchand, Nandita    \r
+
+      \    185         Alexis        Bull          Bull, Alexis         \r
+
+      \    186         Julia         Dellinger     Dellinger, Julia     \r
+
+      \    187         Anthony       Cabrio        Cabrio, Anthony      \r
+
+      \    188         Kelly         Chung         Chung, Kelly         \r
+
+      \    189         Jennifer      Dilly         Dilly, Jennifer      \r
+
+      \    190         Timothy       Venzl         Venzl, Timothy       \r
+
+      \    191         Randall       Perkins       Perkins, Randall     \r
+
+      \    192         Sarah         Bell          Bell, Sarah          \r
+
+      \    193         Britney       Everett       Everett, Britney     \r
+
+      \    194         Samuel        McLeod        McLeod, Samuel       \r
+
+      \    195         Vance         Jones         Jones, Vance         \r
+
+      \    196         Alana         Walsh         Walsh, Alana         \r
+
+      \    197         Kevin         Feeney        Feeney, Kevin        \r
+
+      \    198         Donald        OConnell      OConnell, Donald     \r
+
+      \    199         Douglas       Grant         Grant, Douglas       \r
+
+      \    200         Jennifer      Whalen        Whalen, Jennifer     \r
+
+      \    201         Michael       Martinez      Martinez, Michael    \r
+
+      \    202         Pat           Davis         Davis, Pat           \r
+
+      \    203         Susan         Jacobs        Jacobs, Susan        \r
+
+      \    204         Hermann       Brown         Brown, Hermann       \r
+
+      \    205         Shelley       Higgins       Higgins, Shelley     \r
+
+      \    206         William       Gietz         Gietz, William       \r
+
+      \r
+
+      \    Elapsed: 00:00:00.012\r
+
+      \    107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
   - kind: 1
     value: "\r
 
@@ -3384,6 +3617,78 @@ cells:
       as column `sort_order`.  \r
 
       \    **Hint:** SELECT department_id, 1 AS sort_order FROM hr.departments."
+    languageId: markdown
+  - kind: 2
+    value: "SELECT department_id, 1 AS sort_order \r
+
+      FROM hr.departments;"
+    languageId: oracle-sql
+  - kind: 1
+    value: "    DEPARTMENT_ID SORT_ORDER \r
+
+      \    ------------- ---------- \r
+
+      \    10            1          \r
+
+      \    20            1          \r
+
+      \    30            1          \r
+
+      \    40            1          \r
+
+      \    50            1          \r
+
+      \    60            1          \r
+
+      \    70            1          \r
+
+      \    80            1          \r
+
+      \    90            1          \r
+
+      \    100           1          \r
+
+      \    110           1          \r
+
+      \    120           1          \r
+
+      \    130           1          \r
+
+      \    140           1          \r
+
+      \    150           1          \r
+
+      \    160           1          \r
+
+      \    170           1          \r
+
+      \    180           1          \r
+
+      \    190           1          \r
+
+      \    200           1          \r
+
+      \    210           1          \r
+
+      \    220           1          \r
+
+      \    230           1          \r
+
+      \    240           1          \r
+
+      \    250           1          \r
+
+      \    260           1          \r
+
+      \    270           1          \r
+
+      \r
+
+      \    Elapsed: 00:00:00.005\r
+
+      \    27 rows selected. \r
+
+      \r\n"
     languageId: markdown
   - kind: 1
     value: "13. **M13.** From `hr.employees`, display `salary` and `monthly_net` as
