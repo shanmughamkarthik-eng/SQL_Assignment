@@ -271,8 +271,6 @@ cells:
   - kind: 1
     value: "\r
 
-      \r
-
       ### Question 2  \r
 
       Display the full name as a single column using concatenation (e.g.,
@@ -525,9 +523,7 @@ cells:
       \r\n"
     languageId: markdown
   - kind: 1
-    value: "\r
-
-      ### Question 3  \r
+    value: "### Question 3  \r
 
       Calculate annual salary as `salary * 12` and give it the alias
       `annual_salary`.\r
@@ -3130,7 +3126,7 @@ cells:
 
       \r
 
-      \    Elapsed: 00:00:00.008\r
+      \    Elapsed: 00:00:00.002\r
 
       \    107 rows selected. \r
 
@@ -3143,17 +3139,243 @@ cells:
       \    **Hint:** Add `'Standard' AS salary_band` in SELECT."
     languageId: markdown
   - kind: 2
-    value: "10. **M10.** Display `job_id`, `salary`, and a column `salary_band` that
-      is the literal `'Standard'` for every row.  \r
+    value: "SELECT job_id, salary, 'Standard' AS salary_band\r
 
-      \    **Hint:** Add `'Standard' AS salary_band` in SELECT."
+      FROM hr.employees;"
     languageId: oracle-sql
+  - kind: 1
+    value: "    JOB_ID       SALARY SALARY_BAND \r
+
+      \    ------------ ------ ----------- \r
+
+      \    AD_PRES      24000  Standard    \r
+
+      \    AD_VP        17000  Standard    \r
+
+      \    AD_VP        17000  Standard    \r
+
+      \    IT_PROG      9000   Standard    \r
+
+      \    IT_PROG      6000   Standard    \r
+
+      \    IT_PROG      4800   Standard    \r
+
+      \    IT_PROG      4800   Standard    \r
+
+      \    IT_PROG      4200   Standard    \r
+
+      \    FI_MGR       12008  Standard    \r
+
+      \    FI_ACCOUNT   9000   Standard    \r
+
+      \    FI_ACCOUNT   8200   Standard    \r
+
+      \    FI_ACCOUNT   7700   Standard    \r
+
+      \    FI_ACCOUNT   7800   Standard    \r
+
+      \    FI_ACCOUNT   6900   Standard    \r
+
+      \    PU_MAN       11000  Standard    \r
+
+      \    PU_CLERK     3100   Standard    \r
+
+      \    PU_CLERK     2900   Standard    \r
+
+      \    PU_CLERK     2800   Standard    \r
+
+      \    PU_CLERK     2600   Standard    \r
+
+      \    PU_CLERK     2500   Standard    \r
+
+      \    ST_MAN       8000   Standard    \r
+
+      \    ST_MAN       8200   Standard    \r
+
+      \    ST_MAN       7900   Standard    \r
+
+      \    ST_MAN       6500   Standard    \r
+
+      \    ST_MAN       5800   Standard    \r
+
+      \    ST_CLERK     3200   Standard    \r
+
+      \    ST_CLERK     2700   Standard    \r
+
+      \    ST_CLERK     2400   Standard    \r
+
+      \    ST_CLERK     2200   Standard    \r
+
+      \    ST_CLERK     3300   Standard    \r
+
+      \    ST_CLERK     2800   Standard    \r
+
+      \    ST_CLERK     2500   Standard    \r
+
+      \    ST_CLERK     2100   Standard    \r
+
+      \    ST_CLERK     3300   Standard    \r
+
+      \    ST_CLERK     2900   Standard    \r
+
+      \    ST_CLERK     2400   Standard    \r
+
+      \    ST_CLERK     2200   Standard    \r
+
+      \    ST_CLERK     3600   Standard    \r
+
+      \    ST_CLERK     3200   Standard    \r
+
+      \    ST_CLERK     2700   Standard    \r
+
+      \    ST_CLERK     2500   Standard    \r
+
+      \    ST_CLERK     3500   Standard    \r
+
+      \    ST_CLERK     3100   Standard    \r
+
+      \    ST_CLERK     2600   Standard    \r
+
+      \    ST_CLERK     2500   Standard    \r
+
+      \    SA_MAN       14000  Standard    \r
+
+      \    SA_MAN       13500  Standard    \r
+
+      \    SA_MAN       12000  Standard    \r
+
+      \    SA_MAN       11000  Standard    \r
+
+      \    SA_MAN       10500  Standard    \r
+
+      \    SA_REP       10000  Standard    \r
+
+      \    SA_REP       9500   Standard    \r
+
+      \    SA_REP       9000   Standard    \r
+
+      \    SA_REP       8000   Standard    \r
+
+      \    SA_REP       7500   Standard    \r
+
+      \    SA_REP       7000   Standard    \r
+
+      \    SA_REP       10000  Standard    \r
+
+      \    SA_REP       9500   Standard    \r
+
+      \    SA_REP       9000   Standard    \r
+
+      \    SA_REP       8000   Standard    \r
+
+      \    SA_REP       7500   Standard    \r
+
+      \    SA_REP       7000   Standard    \r
+
+      \    SA_REP       10500  Standard    \r
+
+      \    SA_REP       9500   Standard    \r
+
+      \    SA_REP       7200   Standard    \r
+
+      \    SA_REP       6800   Standard    \r
+
+      \    SA_REP       6400   Standard    \r
+
+      \    SA_REP       6200   Standard    \r
+
+      \    SA_REP       11500  Standard    \r
+
+      \    SA_REP       10000  Standard    \r
+
+      \    SA_REP       9600   Standard    \r
+
+      \    SA_REP       7400   Standard    \r
+
+      \    SA_REP       7300   Standard    \r
+
+      \    SA_REP       6100   Standard    \r
+
+      \    SA_REP       11000  Standard    \r
+
+      \    SA_REP       8800   Standard    \r
+
+      \    SA_REP       8600   Standard    \r
+
+      \    SA_REP       8400   Standard    \r
+
+      \    SA_REP       7000   Standard    \r
+
+      \    SA_REP       6200   Standard    \r
+
+      \    SH_CLERK     3200   Standard    \r
+
+      \    SH_CLERK     3100   Standard    \r
+
+      \    SH_CLERK     2500   Standard    \r
+
+      \    SH_CLERK     2800   Standard    \r
+
+      \    SH_CLERK     4200   Standard    \r
+
+      \    SH_CLERK     4100   Standard    \r
+
+      \    SH_CLERK     3400   Standard    \r
+
+      \    SH_CLERK     3000   Standard    \r
+
+      \    SH_CLERK     3800   Standard    \r
+
+      \    SH_CLERK     3600   Standard    \r
+
+      \    SH_CLERK     2900   Standard    \r
+
+      \    SH_CLERK     2500   Standard    \r
+
+      \    SH_CLERK     4000   Standard    \r
+
+      \    SH_CLERK     3900   Standard    \r
+
+      \    SH_CLERK     3200   Standard    \r
+
+      \    SH_CLERK     2800   Standard    \r
+
+      \    SH_CLERK     3100   Standard    \r
+
+      \    SH_CLERK     3000   Standard    \r
+
+      \    SH_CLERK     2600   Standard    \r
+
+      \    SH_CLERK     2600   Standard    \r
+
+      \    AD_ASST      4400   Standard    \r
+
+      \    MK_MAN       13000  Standard    \r
+
+      \    MK_REP       6000   Standard    \r
+
+      \    HR_REP       6500   Standard    \r
+
+      \    PR_REP       10000  Standard    \r
+
+      \    AC_MGR       12008  Standard    \r
+
+      \    AC_ACCOUNT   8300   Standard    \r
+
+      \r
+
+      \    Elapsed: 00:00:00.008\r
+
+      \    107 rows selected. \r
+
+      \r\n"
+    languageId: markdown
   - kind: 1
     value: "11. **M11.** List `employee_id`, `first_name`, `last_name`, and a column
       `display_name` as \"Last, First\" (last_name, comma space,
       first_name).  \r
 
-      \    **Hint:** `last_name || ', ' || first_name AS display_name`.\r\n"
+      \    **Hint:** `last_name || ', ' || first_name AS display_name`."
     languageId: markdown
   - kind: 1
     value: "\r
@@ -3161,10 +3383,7 @@ cells:
       12. **M12.** Show `department_id` from `hr.departments` and a literal `1`
       as column `sort_order`.  \r
 
-      \    **Hint:** SELECT department_id, 1 AS sort_order FROM
-      hr.departments.\r
-
-      \r\n"
+      \    **Hint:** SELECT department_id, 1 AS sort_order FROM hr.departments."
     languageId: markdown
   - kind: 1
     value: "13. **M13.** From `hr.employees`, display `salary` and `monthly_net` as
@@ -3180,13 +3399,6 @@ cells:
       NVL.  \r
 
       \    **Hint:** NVL(commission_pct, 0) AS commission_display."
-    languageId: markdown
-  - kind: 1
-    value: "15. **M15.** Display `first_name`, `last_name`, `salary`, and a column
-      `compensation` that is salary * (1 + NVL(commission_pct, 0)).  \r
-
-      \    **Hint:** Total comp = salary + salary*commission_pct; factor as
-      salary*(1 + NVL(commission_pct,0))."
     languageId: markdown
   - kind: 1
     value: "16. **M16.** From `hr.departments`, list `department_name` and a literal
